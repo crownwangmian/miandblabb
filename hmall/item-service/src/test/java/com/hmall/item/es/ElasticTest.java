@@ -1,4 +1,4 @@
-package com.hamll.item.es;
+package com.hmall.item.es;
 
 import org.apache.http.HttpHost;
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequest;

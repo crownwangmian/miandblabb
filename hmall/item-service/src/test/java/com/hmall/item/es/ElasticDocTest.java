@@ -1,4 +1,4 @@
-package com.hamll.item.es;
+package com.hmall.item.es;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.json.JSONUtil;
@@ -7,6 +7,7 @@ import com.hmall.item.domain.po.Item;
 import com.hmall.item.domain.po.ItemDoc;
 import com.hmall.item.service.IItemService;
 
+import com.hmall.item.service.impl.ItemServiceImpl;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
@@ -16,9 +17,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.IOException;
-// TODO SOLVE PROBLEM OF UNABLE TO FIND A  SPRINGBOOTCONFIGURATION
+// TODO SOLVE PROBLEM OF UNABLE TO FIND A  SPRINGBOOTCONFIGURATION(问题解决了，文件名称写错了，导致，无法扫描到包)
 
 @SpringBootTest(properties = "spring.profiles.active=local")
+
 public class ElasticDocTest {
 
     private RestHighLevelClient client;
